@@ -1,5 +1,5 @@
 # Sistema de Controle de Despesas
-Este projeto visa desenvolver uma API RESTful com um CRUD básico para despesas associadas a um usuário. O projeto é estruturado para utilizar Design Patterns e seguir boas práticas de Clean Code, incluindo os princípios SOLID e Object Calisthenics. A documentação foi cuidadosamente elaborada, tanto no código quanto no Swagger, para garantir clareza e organização.
+Este projeto desenvolve uma API RESTful para gerenciar despesas de usuários, com funcionalidades CRUD. Foi criado com foco em boas práticas de código, seguindo princípios como SOLID. A documentação é clara e organizada, utilizando Swagger para descrever a API.
 
 ## Tecnologias Utilizadas
 
