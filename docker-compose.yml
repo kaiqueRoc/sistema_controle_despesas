@@ -1,0 +1,31 @@
+version: '3.3'
+services:
+  sistema_controle_despesas:
+    build: ./
+    container_name: nginx-sistema_controle_despesas
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/usr/share/nginx/html
+    restart: always
+    networks:
+      - sistema_controle_despesas
+
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: sistema_despesas
+      MYSQL_USER: root
+      MYSQL_PASSWORD:
+    volumes:
+      - .docker/dbdata:/var/lib/mysql
+    networks:
+      - sistema_controle_despesas
+
+networks:
+    sistema_controle_despesas:
+        driver: bridge
